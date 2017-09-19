@@ -16,7 +16,7 @@ Lets say you want to remove the trailing ".v2.0" at the end of the isoform list,
 will remove the specified pattern from the file
 
     Eucgr.A00001.1   -	-	Eucgr.A00001	Eucgr.A00001	-	Chr01:2787013-2792340	2184	-	33.1904	23.060343.3017 OK 31.9871 22.1794 41.7748 OK
-    Eucgr.A00003.1	     -	-	Eucgr.A00003	Eucgr.A00003	-	Chr01:2759420-2762078	1314	-	23.199614.804331.5934 OK 23.9346 15.39	  32.4719 OK
+    Eucgr.A00003.1	 -	-	Eucgr.A00003	Eucgr.A00003	-	Chr01:2759420-2762078	1314	-	23.199614.804331.5934 OK 23.9346 15.39	  32.4719 OK
 
 You can also replace the "Eucgr" with the shortened species name by running:
 
@@ -62,8 +62,8 @@ And if you only want the isoform ids and their chromosome location of these isof
 
     awk '$10 > 1 && $14 < 1 {print $1 "\t" $7}' isoforms.fpkm_tracking
 
-    Eucgr.A00032.1.v2.0	Chr01:2526775-2529499
-    Eucgr.A00037.2.v2.0	Chr01:2452862-2458039
+    Eucgr.A00032.1.v2.0 Chr01:2526775-2529499
+    Eucgr.A00037.2.v2.0 Chr01:2452862-2458039
     Eucgr.A00080.2.v2.0 Chr01:1663976-1666451
     Eucgr.A00130.1.v2.0 Chr01:7324618-7325642
     Eucgr.A00136.1.v2.0 Chr01:7379025-7380244
